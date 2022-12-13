@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Natives</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text">EN CONSTRUCTION</h1>
+        <p class="loading">Ce site est actuellement en construction.</p>
+    </div>
+    <div class="textebas">
+        <p class="textebas">Rendez-vous le 23 mars 2023.</p>
+    </div>
+    <script>
+        const loadingText = document.querySelector(".loading");
+        let dots = 0;
+        setInterval(() => {
+            dots = (dots + 1) % 4;
+            loadingText.innerText = "Ce site est actuellement en construction" + ".".repeat(dots);
+        }, 500);
+    </script>
+</body>
+</html>
